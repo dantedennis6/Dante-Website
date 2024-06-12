@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('fonts/Fontspring-DEMO-proximanovacond-bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    background: linear-gradient(to bottom, #00008b, #d3d3d3);
+    background-attachment: fixed;  /* Make the gradient background fixed */
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+header {
+    width: 100%;
+    padding: 20px 0;
+    background: transparent;
+    text-align: center;
+}
+
+.button-container {
+    position: fixed;
+    top: 100px;  /* Adjust this value to move the button container up or down */
+    left: 20px;  /* Adjust this value to move the button container left or right */
+    display: flex;
+    flex-direction: column;
+}
+
+.button-container button {
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    background-color: #444;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button-container button:hover {
+    background-color: #666;
+}
+
+.content {
+    margin-left: 150px;  /* Adjust this value to move the content right, away from the buttons */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-family: 'Proxima Nova', sans-serif;  /* Apply Proxima Nova */
+    font-weight: bold;
+    text-shadow:
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;  /* Create a black outline */
+}
+
+p {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
